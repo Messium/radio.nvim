@@ -44,12 +44,19 @@ M.radio = function(opts)
             vim.print(selection.ordinal)
             -- vim.print(type(selection.ordinal))
                 -- string returned
-            vim.system({'mpv', selection.ordinal, '& disown'}, { text = true })
+            vim.system({'mpv', selection.ordinal, '--input-ipc-server=/tmp/mpvsocket', '& disown'}, { text = true })
         end)
         return true
         end,
   }):find()
 end
+
+-- TODO:
+-- pass this mpv file --input-ipc-server=/tmp/mpvsocket
+-- and then this:
+-- echo cycle pause | socat - "$XDG_CONFIG_HOME/mpv/socket"
+-- M.pause = function()
+-- end
 -- -- to execute the function
 -- radio()
 
