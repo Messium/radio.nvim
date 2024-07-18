@@ -5,8 +5,7 @@ local conf = require("telescope.config").values
 local actions = require "telescope.actions"
 local action_state = require "telescope.actions.state"
 
-
-local radio = function(opts)
+M.radio = function(opts)
   opts = opts or {}
   pickers.new(opts, {
     prompt_title = "Select radio",
@@ -52,6 +51,6 @@ local radio = function(opts)
   }):find()
 end
 -- -- to execute the function
-radio()
+-- radio()
 
 return M
