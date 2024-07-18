@@ -60,5 +60,7 @@ M.pause = function()
 end
 -- -- to execute the function
 -- radio()
+-- TODO: create a function that shutdown when neovim shutdown.
+-- TODO: Create a function that can be called manually to kill mpv.
 
 return M
