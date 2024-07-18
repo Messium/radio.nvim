@@ -55,8 +55,9 @@ end
 -- pass this mpv file --input-ipc-server=/tmp/mpvsocket
 -- and then this:
 -- echo cycle pause | socat - "$XDG_CONFIG_HOME/mpv/socket"
--- M.pause = function()
--- end
+M.pause = function()
+    vim.system({'echo cycle pause | socat - "/tmp/mpvsocket"'}, { text = true })
+end
 -- -- to execute the function
 -- radio()
 
