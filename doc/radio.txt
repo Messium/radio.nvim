@@ -1,7 +1,11 @@
 ================================================================================
 INTRODUCTION                                                    *radio.nvim*
 
+Radio.nvim is a plugin that use telescope to handle radio streams and send
+them into mpv as an external command.
 
+Requirements
+- mpv
+- telescope.nvim https://github.com/nvim-telescope/telescope.nvim
 
-
- vim:tw=78:ts=8:ft=help:norl:
+vim:tw=78:ts=8:ft=help:norl:
