@@ -45,7 +45,7 @@ local radio = function(opts)
             vim.print(selection.ordinal)
             -- vim.print(type(selection.ordinal))
                 -- string returned
-            local obj = vim.system({'mpv', selection.ordinal, '& disown'}, { text = true })
+            vim.system({'mpv', selection.ordinal, '& disown'}, { text = true })
         end)
         return true
         end,
