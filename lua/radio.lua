@@ -26,6 +26,7 @@ M.radio = function(opts)
                 { "P1", "http://sverigesradio.se/topsy/direkt/132-hi-aac.pls" },
                 { "P2", "https://http-live.sr.se/p2musik-aac-320" },
                 { "P3", "https://sverigesradio.se/topsy/direkt/164-hi-mp3.m3u" },
+                { "Liquid DnB", "http://95.47.244.172:8000/live" },
         },
         entry_maker = function(entry)
                 return {
