@@ -12,8 +12,8 @@ M.radio = function(opts)
     finder = finders.new_table({
         results = {
                 { "Cadena SER", "http://27833.live.streamtheworld.com/CADENASER.mp3" },
-                { "IB3", "http://streaming01.ib3radio.com:8000/ib3radio.mp3" },
                 { "RNE", "https://rtvelivestream.akamaized.net/rtvesec/rne/rne_r1_main.m3u8?idasset=1712486" },
+                { "IB3", "http://streaming01.ib3radio.com:8000/ib3radio.mp3" },
                 { "RNE - Música Clásica", "https://rtvelivestream.akamaized.net/rtvesec/rne/rne_r2_main.m3u8?idasset=1712494" },
                 { "Latina Reggaeton", "http://latinareggaeton.ice.infomaniak.ch/latinareggaeton.mp3" },
                 { "100% Reggaeton", "https://stream-148.zeno.fm/qmhf2yd9dm0uv" },
@@ -27,7 +27,6 @@ M.radio = function(opts)
                 { "P2", "https://http-live.sr.se/p2musik-aac-320" },
                 { "P3", "https://sverigesradio.se/topsy/direkt/164-hi-mp3.m3u" },
                 { "Liquid DnB", "http://95.47.244.172:8000/live" },
-                { "Cumbias Inmortales Radio (Monterrey)", "https://panel.retrolandigital.com/listen/cumbias_inmortales_radio/listen"},
         },
         entry_maker = function(entry)
                 return {
