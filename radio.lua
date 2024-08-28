@@ -23,11 +23,11 @@ M.radio = function(opts)
                 { "RAC1", "https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3" },
                 { "Catalunya Ràdio", "https://directes-radio-int.ccma.cat/live-content/catalunya-radio-hls/master.m3u8" },
                 { "Catalunya Informació", "https://shoutcast.ccma.cat/ccma/catalunyainformacioHD.mp3" },
+                { "Liquid DnB", "http://95.47.244.172:8000/live" },
+                { "DnB FM", "https://air.dnbfm.ru/listen/player/qplay" },
                 { "P1", "http://sverigesradio.se/topsy/direkt/132-hi-aac.pls" },
                 { "P2", "https://http-live.sr.se/p2musik-aac-320" },
                 { "P3", "https://sverigesradio.se/topsy/direkt/164-hi-mp3.m3u" },
-                { "Liquid DnB", "http://95.47.244.172:8000/live" },
-                { "DnB FM", "https://air.dnbfm.ru/listen/player/qplay" },
                 { "Cumbias Inmortales Radio (Monterrey)", "https://panel.retrolandigital.com/listen/cumbias_inmortales_radio/listen"},
         },
         entry_maker = function(entry)
