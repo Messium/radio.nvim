@@ -43,7 +43,7 @@ M.radio = function(opts)
         actions.select_default:replace(function()
             actions.close(prompt_bufnr)
             local selection = action_state.get_selected_entry()
-            vim.cmd("!pkill -9 mpv")
+            vim.fn.system("pkill -9 mpv")
             vim.print(selection.ordinal)
             -- vim.print(type(selection.ordinal))
                 -- string returned
@@ -58,9 +58,12 @@ end
 -- pass this mpv file --input-ipc-server=/tmp/mpvsocket
 -- and then this:
 -- echo cycle pause | socat - "$XDG_CONFIG_HOME/mpv/socket"
+--
 M.pause = function()
     vim.system({'echo cycle pause | socat - "/tmp/mpvsocket"'}, { text = true })
 end
+
+vim.api.nvim_create_user_command("RadioPause", M.pause, { nargs = 0 })
 -- -- to execute the function
 -- radio()
 -- TODO: create a function that shutdown when neovim shutdown.
