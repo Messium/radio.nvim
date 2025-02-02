@@ -64,7 +64,7 @@ M.pause = function()
     vim.system({'echo cycle pause | socat - "/tmp/mpvsocket"'}, { text = true })
 end
 
-vim.api.nvim_create_user_command("RadioPause", M.pause, { nargs = 0 })
+M.vim.api.nvim_create_user_command("RadioPause", M.pause, { nargs = 0 })
 -- -- to execute the function
 -- radio()
 -- TODO: create a function that shutdown when neovim shutdown.
